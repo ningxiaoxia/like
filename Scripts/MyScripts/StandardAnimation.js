@@ -3,7 +3,7 @@ var isMatrixEnd = false;
 var isPoolEnd = false;
 var currentRowIndex = 0;
 var currentColumnIndex = -1;
-var pageCurrentRowIndex = 20;
+var pageCurrentRowIndex = 15;
 var pageCurrentColumnIndex = 20;
 var binaryMatrixArray = new Array();
 
@@ -60,7 +60,7 @@ function start() {
                 isMatrixEnd = false;
                 currentRowIndex = 0;
                 currentColumnIndex = -1;
-                pageCurrentRowIndex = 20;
+                pageCurrentRowIndex = 15;
                 pageCurrentColumnIndex = 20;
                 continueAnimation();
 
@@ -70,7 +70,7 @@ function start() {
             continueAnimation();
         }
 
-    }, 70);
+    }, 50);
 
 }
 
