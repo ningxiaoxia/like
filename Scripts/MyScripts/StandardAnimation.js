@@ -7,9 +7,6 @@ var pageCurrentRowIndex = 15;
 var pageCurrentColumnIndex = 20;
 var binaryMatrixArray = new Array();
 
-function calculatePageStartIndex() {
-
-}
 
 function initMatrixPool() {
    matrixPool.push("0810,0810,0810,1020,1020,2244,7efc,0408,0810,1020,2040,7efc,0000,0004,fffe,0000-0810,0810,0810,1020,1020,2244,7efc,0408,0810,1020,2040,7efc,0000,0004,fffe,0000-0080,4044,2ffe,1008,03fc,0208,0a08,1208,23f8,e248,2040,2150,224c,2444,2940,0080-0110,3ff8,0820,0444,fffe,0010,1ff8,1010,1ff0,1010,1ff0,0200,5184,5092,9012,0ff0");//丝丝凉意
@@ -35,7 +32,7 @@ function initMatrixPool() {
 
 function start() {
     initMatrixPool();
-    setTimeout(addBackgroundMusic, 180000);
+    setTimeout(addBackgroundMusic, 2000000);
     binaryMatrixArray = parseStrings(matrixPool.pop(), "-", ",");
     var timer = setInterval(function () {
         if (isMatrixEnd) {
