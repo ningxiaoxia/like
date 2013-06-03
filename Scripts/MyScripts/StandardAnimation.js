@@ -32,7 +32,7 @@ function initMatrixPool() {
 
 function start() {
     initMatrixPool();
-    setTimeout(addBackgroundMusic, 2000000);
+    setTimeout(addBackgroundMusic, 200000);
     binaryMatrixArray = parseStrings(matrixPool.pop(), "-", ",");
     var timer = setInterval(function () {
         if (isMatrixEnd) {
